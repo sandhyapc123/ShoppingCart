@@ -36,6 +36,8 @@
             this.appleBox = new System.Windows.Forms.TextBox();
             this.orangesBox = new System.Windows.Forms.TextBox();
             this.totalCostBox = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -122,11 +124,40 @@
             this.totalCostBox.Size = new System.Drawing.Size(100, 22);
             this.totalCostBox.TabIndex = 7;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(356, 409);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(143, 37);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "CheckOut";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Items.AddRange(new object[] {
+            "ToDay Special Offers",
+            "",
+            "Apples\t-  Buy one Get one",
+            "Oranges\t-  Buy 3 for the price of 2"});
+            this.listBox1.Location = new System.Drawing.Point(615, 122);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(233, 84);
+            this.listBox1.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(929, 518);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.totalCostBox);
             this.Controls.Add(this.orangesBox);
             this.Controls.Add(this.appleBox);
@@ -152,6 +183,8 @@
         private System.Windows.Forms.TextBox appleBox;
         private System.Windows.Forms.TextBox orangesBox;
         private System.Windows.Forms.TextBox totalCostBox;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
